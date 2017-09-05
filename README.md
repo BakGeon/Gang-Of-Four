@@ -1,2 +1,2 @@
-# Gang-of-four
+# Gang-Of-Four
 create game! have fun!
