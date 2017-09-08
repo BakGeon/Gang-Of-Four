@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <conio.h>
 using namespace std;
 
 
@@ -25,4 +26,12 @@ enum COLOR
 	PURPLE = 13,
 	YELLOW = 14,
 	WHITE = 15
+};
+
+enum class DIR
+{
+	LEFT,
+	RIGHT,
+	UP,
+	DOWN
 };
