@@ -48,3 +48,14 @@ void ConsoleLib::SetColor(char drawable)
 
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), (bgcolor << 4) | color);
 }
+
+int ConsoleLib::GetKey()
+{
+	if (_kbhit())
+	{
+		int c = _getch();
+		return c == 224 ? _getch() : c;
+	}
+
+	return NULL;
+}
